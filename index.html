@@ -3,62 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Late & Mia Petshop - Home</title>
+    <title>Late & Mia Petshop - Cuidado e Carinho para seu Pet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"> 
 </head>
-
 <body>
+
     <header>
-        <img src="./assets/logotipo.png" width="300" height="290">
-    <div> <!--DIV REFERENTE AO MENU-->
-        <p><h2>Menu</h2>
-        <ul><h3>
-            <a href="index.html">Home</a>
-                <dd><li><a href="index.html#quemsomos">Quem somos</li></dd></a>
-                <dd><li><a href="index.html#contato">Contato</li></dd></a>
-
-            <a href="acessorios.html"><dt>Acessórios</a></dt>
-                <dd><li><a href="acessorios.html#roupas">Roupas</a></li></dd>
-                <dd><li><a href="acessorios.html#brinquedos"> Brinquedos</li></dd></a>
-                <dd><li><a href="acessorios.html#camas">Camas e Cobertores</li></dd></a>
-
-            <a href="racoes.html"><dt>Rações</dt></a>
-                <dd><li><a href="racoes.html#racoes">Ração Não Perecível</li></dd></a>
-                <dd><li><a href="racoe.html#saches">Ração Úmida</li></dd></a>
-
-            <dt><a href="produtos.html"> Produtos de Higiene e Limpeza</dt></a>
-                <dd><li><a href="produtos.html#tapete">Tapete Higiênico</li></dd></a>
-                <dd><li><a href="produtos.html#fraldas">Fraldas</li></dd></a>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./assets/logotipo.png" alt="Logo Late & Mia Petshop">
+                </a>
                 
-
-            <dt><a href="servicos.html"> Serviços</dt></a>
-                <dd><li><a href="servicos.html#banho">Banho e Tosa</li></dd></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 
-        </h3></ul>
-    </div>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+                        <li class="nav-item"><a class="nav-link" href="agendamento.html">Agendamento</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cadastro.html">Cadastro</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownProdutos" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Produtos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownProdutos">
+                                <li><a class="dropdown-item text-dark" href="racoes.html">Raçôes</a></li>
+                                <li><a class="dropdown-item text-dark" href="acessorios.html">Acessórios</a></li>
+                                <li><a class="dropdown-item text-dark" href="produtos.html">Todos os Produtos</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <div> <!--DIV REFERENTE AO CONTEÚDO DA PAGINA-->
-        <section> <!--SESSAO QUEM SOMOS-->
-            <h2 id="#quemsomos">🐾 Quem somos</h2>
-            <p><blockquote> Mais do que um petshop, somos uma família apaixonada por pets. Trabalhamos todos os dias para proporcionar os melhores produtos, serviços e experiências para quem ama e cuida de seus companheiros de quatro patas.</blockquote>
-            <blockquote>Aqui você encontra alimentos de qualidade, brinquedos, acessórios, produtos de higiene, banho e tosa, além de uma equipe preparada para atender com empatia e dedicação. Nosso compromisso é garantir o conforto, a segurança e a felicidade dos seus bichinhos — porque eles merecem o melhor!</blockquote>
-            <blockquote>No Late & Mia Petshop, o seu pet é tratado como parte da nossa família!</blockquote>
-            </p>
+    <main class="container mt-4">
+        
+        <div id="petshopCarousel" class="carousel slide" data-bs-ride="carousel">
+            
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#petshopCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1: Nossos Serviços de Banho"></button>
+                <button type="button" data-bs-target="#petshopCarousel" data-bs-slide-to="1" aria-label="Slide 2: Promoção de Rações Premium"></button>
+                <button type="button" data-bs-target="#petshopCarousel" data-bs-slide-to="2" aria-label="Slide 3: Agende a Tosa do seu Pet"></button>
+            </div>
+
+            <div class="carousel-inner">
+                
+                <div class="carousel-item active">
+                    <img src="./assets/slide1_banho.jpg" class="d-block w-100" alt="Cachorro da raça Golden Retriever relaxando durante um banho.">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>🚿 Banho e Tosa Completa</h5>
+                        <p>Seu pet limpo, cheiroso e feliz. Agende agora!</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./assets/slide2_racao.jpg" class="d-block w-100" alt="Diversas embalagens de ração premium para cães e gatos em uma prateleira.">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>🐾 Rações Premium</h5>
+                        <p>As melhores marcas de rações e acessórios com preços imbatíveis.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./assets/slide3_itens.jpg" class="d-block w-100" alt="Os melhores produtos para o seu pet.">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>🐾 Produtos de Qualidade</h5>
+                        <p>Diversos produtos de alta qualidade para o seu pet. Compre já!.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#petshopCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#petshopCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+        
+        <h2 class="mt-5 mb-3 text-center text-warning">Nossa Missão</h2>
+        <p class="lead text-center">Oferecer o melhor em cuidado, carinho e produtos para a saúde e felicidade de todos os pets. Venha nos visitar!</p>
+
+        <section class="row text-center mt-5">
+            <div class="col-md-4">
+                <i class="bi bi-calendar-check fs-1 text-warning"></i>
+                <h3 class="h4 mt-2">Agendamento Fácil</h3>
+                <p>Marque banho, tosa e consultas online em poucos cliques.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="bi bi-bag-heart fs-1 text-warning"></i>
+                <h3 class="h4 mt-2">Produtos Premium</h3>
+                <p>Raçôes de alta qualidade e acessórios exclusivos para seu pet.</p>
+            </div>
         </section>
 
-        <section> <!--CONTATO-->
-            <h2 id="#contato">🐾 Contato</h2>
-            <p><blockquote>📞(11) 0000-0000 </blockquote>
-            <blockquote>📱 (11) 9 0000-0000</blockquote>
-            <blockquote>📧 contato@lateemiapetshop.com.br</blockquote>
-            <blockquote>📍 Rua das Patinhas, 123 — Centro</blockquote>
-            <blockquote>🕒 Seg a Sáb: 8h às 18h</p></blockquote>
-        </section>
-    </div>
+    </main>
+
+    <footer class="footer mt-auto">
+        <div class="container text-center">
+            <p>&copy; 2025 Late & Mia Petshop. Todos os direitos reservados.</p>
+            <p>Rua Exemplo, 123 - Centro | Telefone: (11) 98765-4321</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
-<footer>
-<blockquote><a href="index.html">Home</a> |<a href="acessorios.html"> Acessórios</a> | <a href="racoes.html">Rações</a> | <a href="produtos.html"> Produtos de Higiene e Limpeza</a> | <a href="servicos.html"> Serviços</a></blockquote>
-<blockquote>📞(11) 0000-0000 | 📱 (11) 9 0000-0000 | 📧 contato@lateemiapetshop.com.br | 📍 Rua das Patinhas, 123 — Centro | 🕒 Seg a Sáb: 8h às 18h</blockquote></blockquote>   
-<blockquote>Copyright© 2025 Late e Mia Comércio S/A -  Todos os direitos reservados.</blockquote>
-</footer>
 </html>

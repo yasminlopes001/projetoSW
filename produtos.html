@@ -3,71 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Late & Mia Petshop - Higiene e Limpeza</title>
+    <title>Produtos - Late & Mia Petshop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"> 
 </head>
-
 <body>
+
     <header>
-        <img src="./assets/logotipo.png" width="300" height="290">
-    <div> <!--DIV REFERENTE AO MENU-->
-        <p><h2>Menu</h2>
-        <ul><h3>
-            <a href="index.html">Home</a>
-                <dd><li><a href="index.html#quemsomos">Quem somos</li></dd></a>
-                <dd><li><a href="index.html#contato">Contato</li></dd></a>
-
-            <a href="acessorios.html"><dt>Acessórios</a></dt>
-                <dd><li><a href="acessorios.html#roupas">Roupas</a></li></dd>
-                <dd><li><a href="acessorios.html#brinquedos"> Brinquedos</li></dd></a>
-                <dd><li><a href="acessorios.html#camas">Camas e Cobertores</li></dd></a>
-
-            <a href="racoes.html"><dt>Rações</dt></a>
-                <dd><li><a href="racoes.html#racoes">Ração Não Perecível</li></dd></a>
-                <dd><li><a href="racoe.html#saches">Ração Úmida</li></dd></a>
-
-            <dt><a href="produtos.html"> Produtos de Higiene e Limpeza</dt></a>
-                <dd><li><a href="produtos.html#tapete">Tapete Higiênico</li></dd></a>
-                <dd><li><a href="produtos.html#fraldas">Fraldas</li></dd></a>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./assets/logotipo.png" alt="Logo Late & Mia Petshop - Cachorro, Gato e Coala Coloridos">
+                </a>
                 
-
-            <dt><a href="servicos.html"> Serviços</dt></a>
-                <dd><li><a href="servicos.html#banho">Banho e Tosa</li></dd></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 
-        </h3></ul>
-    </div>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+                        <li class="nav-item"><a class="nav-link" href="agendamento.html">Agendamento</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cadastro.html">Cadastro</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" aria-current="page" href="#" id="navbarDropdownProdutos" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Produtos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownProdutos">
+                                <li><a class="dropdown-item text-dark" href="racoes.html">Raçôes</a></li>
+                                <li><a class="dropdown-item text-dark" href="acessorios.html">Acessórios</a></li>
+                                <li><a class="dropdown-item text-dark" href="produtos.html">Todos os Produtos</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <div> <!--DIV REFERENTE AO CONTEÚDO DA PAGINA-->
-        <section> <!--TAPETES-->
-            <h2 id="tapete">🐾 <u>Tapete Higiênico</u></h2>
-            <p><blockquote><img src="./assets/tapete1.png"> </blockquote>
-            <p>Tapete Higiênico MyHug com 30 unidades (80x60cm)</p>
-            de R$89,99 por: <blockquote><h2>R$79,99</h2></blockquote>
-            </p>
-            <p><blockquote><img src="./assets/tapete2.png"> </blockquote>
-            <p>Tapete Higiênico Duo Dia Black PetMais com 30 unidades (80x60) </p>
-            de R$119,99 por: <blockquote><h2>R$109,99</h2></blockquote>
-            </p>
-        </section>
+    <main class="container my-5">
+        <h1 class="text-center mb-5 text-warning">Catálogo Completo de Produtos</h1>
 
-        <section> <!--FRALDAS-->
-            <h2 id="saches">🐾 <u>Fraldas</u></h2>
-            <p><blockquote><img src="./assets/fralda1.png"> </blockquote>
-            <p>Fralda Higiênica Descartável Super Secão para Cães Machos - 12 unidades - Tamanho P</p>
-            de R$49,99 por: <blockquote><h2>R$39,99</h2></blockquote>
-            </p>
-            <p><blockquote><img src="./assets/fralda2.png"> </blockquote>
-            <p>Fralda Higiênica Blue Descartável para Cães Machos - 12 unidades - Tamanho P</p>            
-            de R$39,99 por: <blockquote><h2>R$29,99</h2></blockquote>
-            </p>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
             
-        </section>
-       
-    </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm form-container text-center">
+                    <img src="./assets/racao1.png" class="card-img-top p-3" alt="Saco de ração premium para cães.">
+                    <div class="card-body">
+                        <h5 class="card-title text-dark-blue">Ração Mega Premium 15kg</h5>
+                        <p class="card-text text-dark">Alimento completo e balanceado para cães adultos.</p>
+                        <p class="h4 text-danger">R$ 189,90</p>
+                        <a href="#" class="btn btn-warning">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+             <div class="col">
+                <div class="card h-100 shadow-sm form-container text-center">
+                    <img src="./assets/brinquedo3.png" class="card-img-top p-3" alt="Brinquedo de corda para cachorro.">
+                    <div class="card-body">
+                        <h5 class="card-title text-dark-blue">Brinquedo Corda Dupla</h5>
+                        <p class="card-text text-dark">Brinquedo Mordedor Spike Estrela com Corda para Cães.</p>
+                        <p class="h4 text-danger">R$ 19,99</p>
+                        <a href="#" class="btn btn-warning">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            
+             <div class="col">
+                <div class="card h-100 shadow-sm form-container text-center">
+                    <img src="./assets/cama1.png" class="card-img-top p-3" alt="Frasco de shampoo para filhotes.">
+                    <div class="card-body">
+                        <h5 class="card-title text-dark-blue">Cama duplo alcochoado Cinza</h5>
+                        <p class="card-text text-dark">Garante o conforto que o seu pet merece.</p>
+                        <p class="h4 text-danger">R$ 115,00</p>
+                        <a href="#" class="btn btn-warning">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            
+             <div class="col">
+                <div class="card h-100 shadow-sm form-container text-center">
+                    <img src="./assets/roupa1.png" class="card-img-top p-3" alt="Coleira de couro ajustável.">
+                    <div class="card-body">
+                        <h5 class="card-title text-dark-blue">Roupa Pet Tamanho P</h5>
+                        <p class="card-text text-dark">Roupinha pet estilo verão listrado para cachorros. Acompanha óculos escuro e chapéu</p>
+                        <p class="h4 text-danger">R$ 69,90</p>
+                        <a href="#" class="btn btn-warning">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+    </main>
+
+    <footer class="footer mt-auto">
+        <div class="container text-center">
+            <p>&copy; 2025 Late & Mia Petshop. Todos os direitos reservados.</p>
+            <p>Rua Exemplo, 123 - Centro | Telefone: (11) 98765-4321</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
-<footer>
-<blockquote><a href="index.html">Home</a> |<a href="acessorios.html"> Acessórios</a> | <a href="racoes.html">Rações</a> | <a href="produtos.html"> Produtos de Higiene e Limpeza</a> | <a href="servicos.html"> Serviços</a></blockquote>
-<blockquote>📞(11) 0000-0000 | 📱 (11) 9 0000-0000 | 📧 contato@lateemiapetshop.com.br | 📍 Rua das Patinhas, 123 — Centro | 🕒 Seg a Sáb: 8h às 18h</blockquote></blockquote>   
-<blockquote>Copyright© 2025 Late e Mia Comércio S/A -  Todos os direitos reservados.</blockquote>
-</footer>
 </html>

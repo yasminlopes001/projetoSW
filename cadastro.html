@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Late & Mia Petshop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./assets/logotipo.png" alt="Logo Late & Mia Petshop">
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+                        <li class="nav-item"><a class="nav-link" href="agendamento.html">Agendamento</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="cadastro.html">Cadastro</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownProdutos" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Produtos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownProdutos">
+                                <li><a class="dropdown-item text-dark" href="racoes.html">Raçôes</a></li>
+                                <li><a class="dropdown-item text-dark" href="acessorios.html">Acessórios</a></li>
+                                <li><a class="dropdown-item text-dark" href="produtos.html">Todos os Produtos</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <h1 class="text-center mb-4 text-warning">Cadastre-se na Late & Mia Petshop</h1>
+        <p class="text-center lead text-light">Receba novidades, promoções e cupons exclusivos!</p>
+
+        <form id="formCadastro" class="row g-3 needs-validation form-container p-4 rounded shadow-lg" novalidate>
+            
+            <div class="col-md-6">
+                <label for="validationNome" class="form-label">Nome Completo</label>
+                <input type="text" class="form-control" id="validationNome" required>
+                <div class="invalid-feedback">Por favor, digite seu nome completo.</div>
+            </div>
+
+            <div class="col-md-6">
+                <label for="validationEmail" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="validationEmail" required>
+                <div class="invalid-feedback">Por favor, insira um e-mail válido.</div>
+            </div>
+
+            <div class="col-md-4">
+                <label for="validationTelefone" class="form-label">Telefone (Whatsapp)</label>
+                <input type="tel" class="form-control" id="validationTelefone" placeholder="(XX) XXXXX-XXXX">
+            </div>
+
+            <div class="col-md-4">
+                <label for="validationDataNasc" class="form-label">Data de Nascimento</label>
+                <input type="date" class="form-control" id="validationDataNasc" required>
+                <div class="invalid-feedback">Campo obrigatório.</div>
+            </div>
+            
+            <div class="col-md-4">
+                <label class="form-label d-block">Você tem:</label>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="tipoPet" id="radioCachorro" value="Cachorro" required>
+                    <label class="form-check-label" for="radioCachorro">Cachorro</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="tipoPet" id="radioGato" value="Gato">
+                    <label class="form-check-label" for="radioGato">Gato</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="tipoPet" id="radioOutro" value="Outro">
+                    <label class="form-check-label" for="radioOutro">Outro</label>
+                </div>
+                <div class="invalid-feedback">Selecione uma opção.</div>
+            </div>
+
+            <hr class="mt-4">
+            
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                        Concordo com os termos de uso e política de privacidade.
+                    </label>
+                    <div class="invalid-feedback">Você deve concordar antes de enviar.</div>
+                </div>
+            </div>
+
+            <div class="col-12 text-center">
+                <button class="btn btn-warning btn-lg" type="submit">Cadastrar Agora!</button>
+            </div>
+            
+        </form>
+    </main>
+
+    <footer class="footer mt-auto">
+        <div class="container text-center">
+            <p>&copy; 2025 Late & Mia Petshop. Todos os direitos reservados.</p>
+            <p>Rua Exemplo, 123 - Centro | Telefone: (11) 98765-4321</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

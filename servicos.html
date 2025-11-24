@@ -3,89 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Late & Mia Petshop - Serviços</title>
+    <title>Serviços - Late & Mia Petshop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"> 
 </head>
-
 <body>
+
     <header>
-        <img src="./assets/logotipo.png" width="300" height="290">
-    <div> <!--DIV REFERENTE AO MENU-->
-        <p><h2>Menu</h2>
-        <ul><h3>
-            <a href="index.html">Home</a>
-                <dd><li><a href="index.html#quemsomos">Quem somos</li></dd></a>
-                <dd><li><a href="index.html#contato">Contato</li></dd></a>
-
-            <a href="acessorios.html"><dt>Acessórios</a></dt>
-                <dd><li><a href="acessorios.html#roupas">Roupas</a></li></dd>
-                <dd><li><a href="acessorios.html#brinquedos"> Brinquedos</li></dd></a>
-                <dd><li><a href="acessorios.html#camas">Camas e Cobertores</li></dd></a>
-
-            <a href="racoes.html"><dt>Rações</dt></a>
-                <dd><li><a href="racoes.html#racoes">Ração Não Perecível</li></dd></a>
-                <dd><li><a href="racoe.html#saches">Ração Úmida</li></dd></a>
-
-            <dt><a href="produtos.html"> Produtos de Higiene e Limpeza</dt></a>
-                <dd><li><a href="produtos.html#tapete">Tapete Higiênico</li></dd></a>
-                <dd><li><a href="produtos.html#fraldas">Fraldas</li></dd></a>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./assets/logotipo.png" alt="Logo Late & Mia Petshop">
+                </a>
                 
-
-            <dt><a href="servicos.html"> Serviços</dt></a>
-                <dd><li><a href="servicos.html#banho">Banho e Tosa</li></dd></a>
-            
-                                
-        </h3></ul>
-    </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="servicos.html">Serviços</a></li>
+                        <li class="nav-item"><a class="nav-link" href="agendamento.html">Agendamento</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cadastro.html">Cadastro</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownProdutos" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Produtos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownProdutos">
+                                <li><a class="dropdown-item text-dark" href="racoes.html">Raçôes</a></li>
+                                <li><a class="dropdown-item text-dark" href="acessorios.html">Acessórios</a></li>
+                                <li><a class="dropdown-item text-dark" href="produtos.html">Todos os Produtos</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <div> <!--DIV REFERENTE AO CONTEÚDO DA PAGINA-->
-        <section> <!--BANHO E TOSA-->
-            <h2 id="servicos">🐾 <u>Banho e Tosa</u></h2>
-            <p><blockquote> A higiene do Pet é indicada por inúmeros veterinários, pois com os cuidados preventivos, é possível reduzir a transmissão de doenças para pets e humanos. </blockquote></p>
-            <blockquote><p>Na Late & Mia Petshop, o banho inclui o tratamento da pelagem através de uma hidratação profunda para deixar o pelo do pet saudável, brilhoso e cheiroso.</blockquote></p>
-            <p><blockquote><h3><u>Conheça as Etapas do Banho</u></blockquote></p>
-            <ol>
-                <blockquote><li>Banho</li></blockquote>
-                <blockquote><li>Secagem</li></blockquote>
-                <blockquote><li>Escova na Pelagem</li></blockquote>
-                <blockquote><li>Limpeza dos Ouvidos</li></blockquote>
-                <blockquote><li>Corte das Unhas</li></blockquote>
+    <main class="container my-5">
+        <h1 class="text-center mb-5 text-warning">Catálogo Completo de Serviços</h1>
+
+        <section id="servicos" class="p-4 rounded shadow-lg form-container">
+            <h2 class="text-dark-blue border-bottom pb-2 mb-4">🐾 Banho e Tosa</h2>
             
-            </ol>
-            <p><blockquote>A tosa do seu Pet é realizada de acordo com a sua ecolha. Entretanto, podemos realizar uma avaliação e sugerir um modelo de corte que seja adequado para ele!</blockquote>
-            <blockquote>O corte pode ser feito tanto em pets de pelos longos quanto pelos curtos, sendo avaliado qual o tipo de tosa adequado para cada pelagem. </p></blockquote>
-            <ul><blockquote><li><b> Tosa na Tesoura:</b> Opção indicada para pets de pelagem longa, pois contribui na prevenção de alergias;</li><img src="./assets/tosa1.png"></blockquote>
-            <blockquote><li><b> Tosa na Máquina:</b> Esta opção é feita com a máquina de tosa e deixa a pelagem bem baixa. </li><img src="./assets/tosa2.png"></blockquote></ul>
-            <p><blockquote>Além disso, o Late & Mia Petshop conta com serviços de tele-busca, onde é diponibilizado um transporte exclusivo para realizar o Banho e Tosa em nossa unidade, garantindo todo o conforto e segurança no transporte do seu pet. </blockquote>
-            <blockquote>A contratação deste serviço pode ser realizada ao contratar o serviço de banho e/ou tosa.</p></blockquote>
-            
-            <p><h2>🐾 <u>Valores e Pacotes</u></h2></p>
-            <ul><h3>
-            <blockquote><li>Porte Pequeno</blockquote></li>
-                <p><blockquote><u>Somente Banho</u>: R$49,99</blockquote></p>
-                <p><blockquote><u>Somente Tosa</u>: R$39,99</blockquote></p>
-                <p><blockquote><u>Banho e Tosa</u>: R$79,99</blockquote></p>
+            <p class="lead text-dark">
+                A higiene do Pet é indicada por inúmeros veterinários, pois com os cuidados preventivos, é possível reduzir a transmissão de doenças para pets e humanos. 
+            </p>
+            <p class="alert alert-info text-dark">
+                Na Late & Mia Petshop, o banho inclui o tratamento da pelagem através de uma hidratação profunda para deixar o pelo do pet saudável, brilhoso e cheiroso.
+            </p>
 
-                <blockquote><li>Porte Médio</blockquote></li>
-                <p><blockquote><u>Somente Banho</u>: R$69,99</blockquote></p>
-                <p><blockquote><u>Somente Tosa</u>: R$59,99</blockquote></p>
-                <p><blockquote><u>Banho e Tosa</u>: R$99,99</blockquote></p>
+            <h3 class="text-dark-blue mt-4">Conheça as Etapas do Banho</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <ol class="list-group list-group-flush">
+                        <li class="list-group-item text-dark">Banho</li>
+                        <li class="list-group-item text-dark">Secagem</li>
+                        <li class="list-group-item text-dark">Escova na Pelagem</li>
+                        <li class="list-group-item text-dark">Limpeza dos Ouvidos</li>
+                        <li class="list-group-item text-dark">Corte das Unhas</li>
+                    </ol>
+                </div>
+                <div class="col-md-6 mt-3 mt-md-0">
+                    <p class="text-dark">A tosa do seu Pet é realizada de acordo com a sua escolha. Entretanto, podemos realizar uma avaliação e sugerir um modelo de corte que seja adequado para ele!</p>
+                    <p class="text-dark">O corte pode ser feito tanto em pets de pelos longos quanto pelos curtos, sendo avaliado qual o tipo de tosa adequado para cada pelagem. </p>
+                </div>
+            </div>
 
-                <blockquote><li>Porte Grande</blockquote></li>
-                <p><blockquote><u>Somente Banho</u>: R$79,99</blockquote></p>
-                <p><blockquote><u>Somente Tosa</u>: R$69,99</blockquote></p>
-                <p><blockquote><u>Banho e Tosa</u>: R$109,99</blockquote></p>
+            <h3 class="text-dark-blue mt-5">Tipos de Tosa</h3>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="./assets/tosa1.png" class="card-img-top" alt="Cachorro tosado com corte na tesoura, mantendo o volume da pelagem.">
+                        <div class="card-body">
+                            <h5 class="card-title text-dark-blue">Tosa na Tesoura</h5>
+                            <p class="card-text text-dark">Opção indicada para pets de pelagem longa, pois contribui na prevenção de alergias e mantém um aspecto mais natural.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="./assets/tosa2.png" class="card-img-top" alt="Cachorro tosado com corte na máquina, com a pelagem baixa.">
+                        <div class="card-body">
+                            <h5 class="card-title text-dark-blue">Tosa na Máquina</h5>
+                            <p class="card-text text-dark">Esta opção é feita com a máquina de tosa e deixa a pelagem bem baixa, ideal para o verão ou pets com muita queda de pelo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                <blockquote><li>Serviço de Tele-Busca</blockquote></li>
-                <p><blockquote><u>Valor Único</u>: R$7,99</blockquote></p>
-            </ul></h3>  
+            <div class="alert alert-warning mt-4 text-dark" role="alert">
+                <strong>Serviço Adicional: Tele-Busca.</strong> O Late & Mia Petshop conta com transporte exclusivo para realizar o Banho e Tosa em nossa unidade, garantindo todo o conforto e segurança no transporte do seu pet. A contratação pode ser realizada no momento do agendamento.
+            </div>
+
+            <h2 class="text-dark-blue border-bottom pb-2 mt-5">🐾 Valores e Pacotes</h2>
+
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover text-dark">
+                    <thead class="bg-warning">
+                        <tr>
+                            <th scope="col" class="text-dark-blue">Porte do Pet</th>
+                            <th scope="col" class="text-dark-blue">Somente Banho</th>
+                            <th scope="col" class="text-dark-blue">Somente Tosa</th>
+                            <th scope="col" class="text-dark-blue">Banho e Tosa</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Pequeno</th>
+                            <td>R$49,99</td>
+                            <td>R$39,99</td>
+                            <td class="fw-bold text-success">R$79,99</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Médio</th>
+                            <td>R$69,99</td>
+                            <td>R$59,99</td>
+                            <td class="fw-bold text-success">R$99,99</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Grande</th>
+                            <td>R$79,99</td>
+                            <td>R$69,99</td>
+                            <td class="fw-bold text-success">R$109,99</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="alert alert-success text-center mt-3 fw-bold" role="alert">
+                Serviço de Tele-Busca (Valor Único): R$7,99
+            </div>
+
+            <div class="text-center mt-4">
+                <a href="agendamento.html" class="btn btn-lg btn-warning shadow-sm">Agende o Banho e Tosa do seu Pet Agora!</a>
+            </div>
+
         </section>
-       
-    </div>
+        
+        </main>
+
+    <footer class="footer mt-auto">
+        <div class="container text-center">
+            <p>&copy; 2025 Late & Mia Petshop. Todos os direitos reservados.</p>
+            <p>Rua Exemplo, 123 - Centro | Telefone: (11) 98765-4321</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
-<footer>
-<blockquote><a href="index.html">Home</a> |<a href="acessorios.html"> Acessórios</a> | <a href="racoes.html">Rações</a> | <a href="produtos.html"> Produtos de Higiene e Limpeza</a> | <a href="servicos.html"> Serviços</a></blockquote>
-<blockquote>📞(11) 0000-0000 | 📱 (11) 9 0000-0000 | 📧 contato@lateemiapetshop.com.br | 📍 Rua das Patinhas, 123 — Centro | 🕒 Seg a Sáb: 8h às 18h</blockquote></blockquote>   
-<blockquote>Copyright© 2025 Late e Mia Comércio S/A -  Todos os direitos reservados.</blockquote>
-</footer>
 </html>
